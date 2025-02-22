@@ -7,6 +7,10 @@ theme = "gruvbox_dark_hard"
 mouse = true
 #lsp.enable = false
 auto-completion = true
+cursorline = true
+cursorcolumn = true
+scroll-lines = 1
+
 
 [editor.cursor-shape]
 insert = "bar"
@@ -15,6 +19,15 @@ select = "underline"
 
 [editor.file-picker]
 hidden = false
+
+[editor.lsp]
+display-inlay-hints = true
+display-messages = true
+
+[editor.indent-guides]
+render = true
+character = "╎" # Some characters that work well: "▏", "┆", "┊", "⸽"
+skip-levels = 1
 
 [keys.normal]
 C-s = ":w" # Maps the Control-s to the typable command :w which is an alias for :write (save file)
